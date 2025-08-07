@@ -4,7 +4,7 @@
     "license": "MIT",
     "tags": ["game", "openfl", "flash", "neko", "cpp", "android", "ios", "cross", "vscode"],
     "description": "Templates for HaxeFlixel projects used by Sphis_Sinco",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "releasenote": "message.reporting=pretty",
     "contributors": ["Sinco"],
     "dependencies": {}
