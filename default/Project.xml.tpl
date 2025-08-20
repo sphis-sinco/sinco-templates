@@ -54,6 +54,12 @@
 
 	<!-- Assets.hx and other stuff -->
 	<haxelib name="sphis" />
+	
+	<haxelib name="flixel-modding" if="sphis"/>
+	<define name="flixelModding" if="flixel-modding"/>
+
+	<haxelib name="hscript-iris" if="sphis"/>
+	<define name="hscriptIris" if="hscript-iris"/>
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
