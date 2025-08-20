@@ -19,6 +19,11 @@
       "name": "openfl",
       "type": "haxelib",
       "version": null
+    },
+    {
+      "name": "sphis",
+      "type": "haxelib",
+      "version": null
     }
   ]
 }

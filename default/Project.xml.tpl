@@ -24,8 +24,11 @@
 	<!--Desktop-specific-->
 	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
 
+	<define name="MOBILE_BUILD" if="mobile"/>
+	<define name="MOBILE_BUILD" if="MOBILE_TESTING"/>
+
 	<!--Mobile-specific-->
-	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
+	<window if="MOBILE_BUILD" orientation="landscape" fullscreen="true" width="0" height="0" />
 
 	<!-- _____________________________ Path Settings ____________________________ -->
 
@@ -34,6 +37,7 @@
 
 	<source path="source" />
 	<assets path="assets" />
+        <assets path="build" rename="assets/build.txt" />
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
@@ -47,6 +51,9 @@
 
 	<!--In case you want to use nape with flixel-->
 	<!--<haxelib name="nape-haxe4" />-->
+
+	<!-- Assets.hx and other stuff -->
+	<haxelib name="sphis" />
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
@@ -73,9 +80,10 @@
 	<!--<haxedef name="FLX_NO_NATIVE_CURSOR" />-->
 
 	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
-	<haxedef name="FLX_NO_MOUSE" if="mobile" />
+	
+	<!-- <haxedef name="FLX_NO_MOUSE" if="mobile" />
 	<haxedef name="FLX_NO_KEYBOARD" if="mobile" />
-	<haxedef name="FLX_NO_TOUCH" if="desktop" />
+	<haxedef name="FLX_NO_TOUCH" if="desktop" /> -->
 	<!--<haxedef name="FLX_NO_GAMEPAD" />-->
 
 	<!--Disable the Flixel core sound tray-->
