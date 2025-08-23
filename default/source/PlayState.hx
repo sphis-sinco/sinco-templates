@@ -9,7 +9,7 @@ class PlayState extends FlxState
 {
 	override public function create()
 	{
-		add(new FlxText(10, 10, FlxG.width, '${Application.current.meta.get('file')}.${Main.BUILD}'));
+		add(new FlxText(0, 0, FlxG.width, '${Application.current.meta.get('file')}.${Main.BUILD}'));
 
 		super.create();
 	}
