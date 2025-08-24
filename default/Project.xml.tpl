@@ -53,7 +53,7 @@
 	<!--<haxelib name="nape-haxe4" />-->
 
 	<!-- Assets.hx and other stuff -->
-	<haxelib name="sphis" />
+	<haxelib name="Sphis" />
 	
 	<haxelib name="flixel-modding" if="sphis"/>
 	<define name="flixelModding" if="flixel-modding"/>
